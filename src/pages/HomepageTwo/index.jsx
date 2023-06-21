@@ -4,14 +4,6 @@ import { Button, Img, Input, List, Text, TextArea } from "components";
 
 import { NavLink } from "react-router-dom";
 
-const Menu = () =>(
-  <>
-    <p><NavLink to="/">Home</NavLink></p>
-    <p><NavLink to="/homepage">About Us</NavLink></p>
-    <p><NavLink to="/homepagetwo">Contact Us</NavLink></p>
-  </>
-)
-
 const HomepageTwoPage = () => {
   return (
     <>
