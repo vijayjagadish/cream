@@ -2,6 +2,16 @@ import React from "react";
 
 import { Button, Img, Input, List, Text, TextArea } from "components";
 
+import { NavLink } from "react-router-dom";
+
+const Menu = () =>(
+  <>
+    <p><NavLink to="/">Home</NavLink></p>
+    <p><NavLink to="/homepage">About</NavLink></p>
+    <p><NavLink to="/homepagetwo">Contact</NavLink></p>
+  </>
+)
+
 const HomepageTwoPage = () => {
   return (
     <>
@@ -76,8 +86,8 @@ const HomepageTwoPage = () => {
                       className="border border-blue_gray-200 border-solid flex h-[101px] px-4 py-2 w-full"
                       name="dropdown"
                       placeholder="Add your message"
-                      name="dropdown"
-                      placeholder="Add your message"
+                      
+                      
                     ></TextArea>
                     <div className="flex flex-col font-montserrat items-start justify-start w-full">
                       <Button className="bg-yellow-900 capitalize cursor-pointer font-bold leading-[normal] py-[9px] text-base text-center text-white-A700 w-[116px]">
@@ -191,14 +201,14 @@ const HomepageTwoPage = () => {
                 />
                 <div className="flex flex-row gap-6 items-start justify-start w-auto">
                   <Button className="bg-transparent cursor-pointer font-semibold min-w-[53px] text-center text-gray-900 text-lg">
-                    Home
+                    <p><NavLink to="/">Home</NavLink></p>
                   </Button>
                   <div className="flex flex-col items-end justify-start w-auto">
                     <Text
                       className="text-gray-900 text-lg w-auto"
                       size="txtOpenSansRomanSemiBold18Gray900"
                     >
-                      About Us
+                      <p><NavLink to="/homepage">About</NavLink></p>
                     </Text>
                   </div>
                   <div className="flex flex-col items-end justify-start w-auto">
@@ -206,7 +216,9 @@ const HomepageTwoPage = () => {
                       href="javascript:"
                       className="text-lg text-orange-700 w-auto"
                     >
-                      <Text size="txtOpenSansRomanSemiBold18">Contact Us</Text>
+                      <Text size="txtOpenSansRomanSemiBold18">
+                        <p><NavLink to="/homepagetwo">Contact</NavLink></p>  
+                      </Text>
                     </a>
                   </div>
                 </div>

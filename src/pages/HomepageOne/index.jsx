@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {
   Button,
@@ -13,8 +13,15 @@ import {
 } from "components";
 import HomePageOneColumnOne from "components/HomePageOneColumnOne";
 
+const Menu = () =>(
+  <>
+    <p><NavLink to="/">Home</NavLink></p>
+    <p><NavLink to="/homepage">About</NavLink></p>
+    <p><NavLink to="/homepagetwo">Contact</NavLink></p>
+  </>
+)
+
 const HomepageOnePage = () => {
-  const navigate = useNavigate();
 
   return (
     <>
@@ -31,16 +38,13 @@ const HomepageOnePage = () => {
                   />
                   <div className="flex flex-row gap-6 items-start justify-start w-auto">
                     <Button className="bg-transparent cursor-pointer font-semibold min-w-[53px] text-center text-lg text-orange-700_01">
-                      Home
+                      <p><NavLink to="/">Home</NavLink></p>
                     </Button>
-                    <Button
-                      className="common-pointer bg-transparent cursor-pointer font-semibold min-w-[80px] text-center text-gray-900 text-lg"
-                      onClick={() => navigate("/homepage")}
-                    >
-                      About Us
+                    <Button className="common-pointer bg-transparent cursor-pointer font-semibold min-w-[80px] text-center text-gray-900 text-lg">
+                      <p><NavLink to="/homepage">About Us</NavLink></p>
                     </Button>
                     <Button className="bg-transparent cursor-pointer font-semibold min-w-[95px] text-center text-gray-900_01 text-lg">
-                      Contact Us
+                      <p><NavLink to="/homepagetwo">Contact Us</NavLink></p>
                     </Button>
                   </div>
                 </div>

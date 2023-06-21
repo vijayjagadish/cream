@@ -9,8 +9,8 @@ const ProjectRoutes = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomepageOne />} />
-          <Route path="/about" element={<Homepage />} />
-          <Route path="/contact" element={<HomepageTwo />} />
+          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/homepagetwo" element={<HomepageTwo />} />
         </Routes>
       </Router>
     </React.Suspense>

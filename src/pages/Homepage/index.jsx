@@ -2,6 +2,8 @@ import React from "react";
 
 import { Button, Img, Input, PagerIndicator, Slider, Text } from "components";
 import HomePageColumnarrowleft from "components/HomePageColumnarrowleft";
+import { NavLink } from "react-router-dom";
+
 
 const HomepagePage = () => {
   const sliderRef = React.useRef(null);
@@ -22,18 +24,18 @@ const HomepagePage = () => {
                   />
                   <div className="flex flex-row gap-6 items-start justify-start w-auto">
                     <Button className="bg-transparent cursor-pointer font-semibold min-w-[53px] text-center text-gray-900 text-lg">
-                      Home
+                      <p><NavLink to="/">Home</NavLink></p>
                     </Button>
                     <div className="flex flex-col items-end justify-start w-auto">
                       <Text
                         className="text-lg text-orange-700 w-auto"
                         size="txtOpenSansRomanSemiBold18"
                       >
-                        About Us
+                        <p><NavLink to="/homepage">About Us</NavLink></p>
                       </Text>
                     </div>
                     <Button className="bg-transparent cursor-pointer font-semibold min-w-[95px] text-center text-gray-900_01 text-lg">
-                      Contact Us
+                      <p><NavLink to="/homepagetwo">Contact Us</NavLink></p>
                     </Button>
                   </div>
                 </div>
