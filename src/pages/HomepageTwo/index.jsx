@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 const Menu = () =>(
   <>
     <p><NavLink to="/">Home</NavLink></p>
-    <p><NavLink to="/homepage">About</NavLink></p>
-    <p><NavLink to="/homepagetwo">Contact</NavLink></p>
+    <p><NavLink to="/homepage">About Us</NavLink></p>
+    <p><NavLink to="/homepagetwo">Contact Us</NavLink></p>
   </>
 )
 
@@ -208,7 +208,7 @@ const HomepageTwoPage = () => {
                       className="text-gray-900 text-lg w-auto"
                       size="txtOpenSansRomanSemiBold18Gray900"
                     >
-                      <p><NavLink to="/homepage">About</NavLink></p>
+                      <p><NavLink to="/homepage">About Us</NavLink></p>
                     </Text>
                   </div>
                   <div className="flex flex-col items-end justify-start w-auto">
@@ -217,7 +217,7 @@ const HomepageTwoPage = () => {
                       className="text-lg text-orange-700 w-auto"
                     >
                       <Text size="txtOpenSansRomanSemiBold18">
-                        <p><NavLink to="/homepagetwo">Contact</NavLink></p>  
+                        <p><NavLink to="/homepagetwo">Contact Us</NavLink></p>  
                       </Text>
                     </a>
                   </div>
